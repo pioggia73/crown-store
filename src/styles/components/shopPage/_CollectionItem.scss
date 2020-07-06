@@ -1,0 +1,39 @@
+.collection-item{
+      display: flex;
+      flex-direction: column;
+      height: 45rem;
+      position: relative;
+    
+      &:hover .image { opacity: .8; }
+
+      &:hover .custom-button {
+         display: block;
+         opacity: .85;
+      }
+      
+   .image {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 90%;
+      margin: 2rem 0 1rem 0; 
+      transition: all 1s ease-in;   
+      width: 100%;
+   }
+
+   .custom-button {
+      bottom: 7rem;
+      display: none;
+      left: 10%;
+      opacity: .7;
+      position: absolute;
+      width: 80%;
+   }
+
+   .collection-footer {
+      display: flex;
+      font-size: 2rem;
+      height: 10%;
+      justify-content: space-between;
+   }
+};

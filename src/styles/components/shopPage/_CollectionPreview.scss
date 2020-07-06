@@ -1,0 +1,13 @@
+
+.collection-preview {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   .preview {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+     grid-gap:  2rem; 
+     margin-bottom: 2rem;
+   }
