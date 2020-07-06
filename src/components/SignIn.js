@@ -1,7 +1,7 @@
 import React from 'react';
-//import { useHistory } from 'react-router-dom';
-//import firebase, { app } from 'firebase';
-//import {AuthContext} from '../context/user';
+import { useHistory } from 'react-router-dom';
+import firebase, { app } from 'firebase';
+import {AuthContext} from '../context/user';
 import {signInWithGoogle, auth} from '../firebase/firebase.utils';
 import FormInput from '../components/FormInput';
 import CustomButton from './CustomButton';

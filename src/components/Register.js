@@ -1,10 +1,10 @@
 import React from 'react';
 import {auth, createUserProfileDocument} from '../firebase/firebase.utils';
-// import {withRouter} from 'react-router';
-// import {useHistory} from 'react-router-dom';
-//import {AuthContext} from '../context/user';
-// import firebase from 'firebase';
-// import login from '../utils/login';
+import {withRouter} from 'react-router';
+import {useHistory} from 'react-router-dom';
+import {AuthContext} from '../context/user';
+import firebase from 'firebase';
+import login from '../utils/login';
 import FormInput from '../components/FormInput';
 import CustomButton from './CustomButton';
 

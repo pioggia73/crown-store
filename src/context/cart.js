@@ -10,13 +10,11 @@ const CartProvider = ({children}) => {
 
    const [hidden, setHidden] = React.useState(true);
    const [cartItems, setCart] = React.useState(getCartFromLocalStorage());
-   //const [cartItems, setCart] = React.useState([]);
-
+   
    React.useEffect(()=> {
        localStorage.setItem('cartItems', JSON.stringify(cartItems));
     }, [cartItems])
 
-   
    // ****** toggle cart
    const toggleCartHidden = () => {
    setHidden(!hidden)
