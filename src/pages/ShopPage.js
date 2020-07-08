@@ -1,19 +1,30 @@
 import React from 'react';
-import {ProductContext} from '../context/products';
+import {Route, useRouteMatch} from 'react-router-dom';
+//import {ProductContext} from '../context/products';
 
 // ********** components ********* //
-import CollectionPreview from '../components/CollectionPreview';
+//import CollectionPreview from '../components/CollectionPreview';
+import CollectionOverview from '../components/CollectionOverwiev';
+import CollectionPage from './CollectionPage';
 
 const ShopPage = () => {
 
-   const { productData } = React.useContext(ProductContext);
+  const {path} = useRouteMatch()
+  console.log(path)
+
 
    return (
          <section className='section'>
-            <div>
-               {productData.map(item => (
+            <div className='shop-page'>
+               <Route exact path={path} component={CollectionOverview}/>
+               <Route path={`${path}/:collectionId`}  component={CollectionPage } />
+              
+
+
+
+               {/* {productData.map(item => (
                   <CollectionPreview key={item.id} {...item} />
-               ))}
+               ))} */}
             </div>
          </section>
    )

@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import ShopPage from './pages/ShopPage';
 import SignInAndSignUpPage from './pages/SignInAndSignUpPage';
 import CheckoutPage from './pages/CheckoutPage';
+import CollectionPage from './pages/CollectionPage';
 // ****** components ***** //
 import Navbar from './components/Navbar';
 
@@ -22,6 +23,7 @@ function App() {
             </Route>
             <Route path='/shop'>
               <ShopPage />
+            
             </Route>
             <Route path='/signin'>
               <SignInAndSignUpPage />

@@ -1,6 +1,6 @@
 const productData = [
    {
-      id: 1,
+      id: 'hats',
       title: 'Hats',
       routeName: 'hats',
       items: [
@@ -70,7 +70,7 @@ const productData = [
       ]
    },
    {
-      id: 2,
+      id: 'sneakers',
       title: 'Sneakers',
       routeName: 'sneakers',
       items: [
@@ -133,7 +133,7 @@ const productData = [
       ]
    },
    {
-      id: 3,
+      id: 'jackets',
       title: 'Jackets',
       routeName: 'jackets',
       items: [
@@ -175,7 +175,7 @@ const productData = [
       ]
    },
    {
-      id: 4,
+      id: 'women',
       title: 'Women',
       routeName: 'women',
       items: [
@@ -231,7 +231,7 @@ const productData = [
       ]
    },
    {
-      id: 5,
+      id: 'men',
       title: 'Men',
       routeName: 'men',
       items: [
