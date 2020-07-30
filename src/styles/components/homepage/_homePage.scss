@@ -5,6 +5,14 @@
    grid-template-rows: repeat(2, 30rem);
    grid-gap: 2rem; 
    min-height: 100vh;
+
+   // ****** media
+
+   @media only screen and (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+      background-color: $googleBlue;
+}
 };
 
 .home-container {
@@ -20,13 +28,9 @@
       transition: all 1s ease-in-out;
    }
 
-   &:hover img {
-      transform: scale(1.1);
-   }
+   &:hover img { transform: scale(1.1); }
 
-   &:hover .main-link {
-     opacity: .7;
-   }
+   &:hover .main-link { opacity: .7;}
 };
 
 .main-link {

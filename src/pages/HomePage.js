@@ -10,7 +10,7 @@ const HomePage = ({path}) => {
 //console.log(useParams())
 let {collectionId} = useParams()
 //let {path} = useRouteMatch()
-console.log(collectionId)
+//console.log(collectionId)
 
   
    return (
@@ -22,8 +22,7 @@ console.log(collectionId)
                <h1>{link.title}</h1>
                <h2>shop now</h2>
                </Link>
-               </div>
-               
+               </div>  
          ))}
       </div>
    )
